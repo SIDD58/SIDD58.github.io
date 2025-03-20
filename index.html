@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -35,7 +36,11 @@
 					<nav id="nav">
 						<ul class="links">
 							<li class="active"><a href="index.html">Home page</a></li>
-
+							<li class="inactive"><a href="webdev.html">Web Development</a></li>
+							<li class="inactive"><a href="ai.html">AI </a></li>
+							<li class="inactive"><a href="dataanalyst.html">Data Analysis</a></li>
+							<li class="inactive"><a href="python.html">Python</a></li>
+							<li class="inactive"><a href="cybersecurity.html">Cyber Security</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="https://www.linkedin.com/in/siddharth-samber-661a281b4/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
@@ -260,11 +265,47 @@
 									</header>
 									<a href="https://github.com/SIDD58/Delivery-Rest-Api" class="image fit"><img src="images/w3.PNG" alt="" /></a>
 									<p>
-										<b>Technologies:</b> Mongoose, Express,Node, Postman <br>
-										<b>Objective:</b>Develop a REST API to manage delivery records <br>
-										<b>Result: </b>Created a Delivery REST API and demonstrated proficiency in backend development and API design<br>
+										<b>Technologies:</b> Cloud Build & Run, Artifact Registry for CI/CD, MongoDB Atlas, Docker, nginx, Jenkins, Jest, 
+										super test, Postman , express , cors , dotenv, Node <br>
+										<b>Objective:</b>Develop a scalable RESTful API for managing delivery records with full CRUD capabilities. The 
+										project aimed to integrate a robust CI/CD pipeline for automated testing and seamless cloud deployment <br>
+										<b>Result: </b> Successfully implemented and deployed a containerized REST API that streamlined the development, 
+										testing and deployment workflow in a cloud environment.<br>
 									</p>									<ul class="actions special">
 										<li><a href="https://github.com/SIDD58/Delivery-Rest-Api" class="button">View</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+									
+										<h2><a href="https://github.com/SIDD58/cyber-security-labs">Cyber Security Labs/ Projects <br />
+										</a></h2>
+									</header>
+									<a href="https://github.com/SIDD58/cyber-security-labs" class="image fit"><img src="images/cs1.PNG" alt="" /></a>
+									<p>
+										<b>Technologies:</b> Wireshark, iptables, python sockets, python scapy , openssl, 8086 Assembly Language <br>
+										<b>Concepts :</b>TCP, UDP, HTTP, FTP, ARP, ICMP , DHCP, DNS , TLS, Cookies, Filter table, Sniffing and Spoofing, Shellcode, Symmetric and asymmetric Encrption Decryption Algos , Certification Authorities, Socket programming <br>
+									</p>									<ul class="actions special">
+										<li><a href="https://github.com/SIDD58/cyber-security-labs" class="button">View</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+							
+										<h2><a href="https://github.com/SIDD58/improv">Improv Website<br />
+										</a></h2>
+									</header>
+									<a href="https://github.com/SIDD58/improv" class="image fit"><img src="images/w4.PNG" alt="" /></a>
+									<p>
+										<b>Technologies:</b>  React, Socket.io, Express, Google Apps Script, Passport.js, MongoDB, Google Sheets, Google 
+                                        Cloud, Docker <br>
+										<b>Objective:</b> Develop an interactive website for the improv community with real-time games, SSO , secure 
+                                        authentication, Mailing list and event management.
+										<br>
+										<b>Result:</b>Enhanced user engagement with seamless Single Sign on, multiplayer game interaction, and event 
+                                        management carousel and mailing list to collect contact data in google sheets. <br>
+									</p>									<ul class="actions special">
+										<li><a href="https://github.com/SIDD58/improv" class="button">View</a></li>
 									</ul>
 								</article>
 
@@ -310,3 +351,29 @@
 
 	</body>
 </html>
+
+
+<!--
+My addtion to code to toggle inactive to active class for links  
+however I am not using it as I want to reaload the page when clicked on link
+-->
+
+<!-- <script>
+    // Wait until the DOM is fully loaded
+    document.addEventListener('DOMContentLoaded', function () {
+      const links = document.querySelectorAll('.links li');
+
+      links.forEach(link => {
+        link.addEventListener('click', function(event) {
+          // Prevent default anchor link behavior (if you want to stay on the same page)
+          event.preventDefault();
+
+          // Remove the active class from all links
+          links.forEach(link => link.classList.remove('active'));
+
+          // Add the active class to the clicked link
+          this.classList.add('active');
+        });
+      });
+    });
+  </script> -->
