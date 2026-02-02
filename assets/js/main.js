@@ -255,6 +255,29 @@
 
 		}
 
+	// Carousel functionality
+	$(document).ready(function() {
+		var currentIndex = 0;
+		var $carouselInner = $('.carousel-inner');
+		var $images = $carouselInner.find('img');
+		var totalImages = $images.length;
+
+		function updateCarousel() {
+			var translateX = -currentIndex * 100;
+			$carouselInner.css('transform', 'translateX(' + translateX + '%)');
+		}
+
+		$('.next').click(function() {
+			currentIndex = (currentIndex + 1) % totalImages;
+			updateCarousel();
+		});
+
+		$('.prev').click(function() {
+			currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+			updateCarousel();
+		});
+	});
+
 })(jQuery);
 
 

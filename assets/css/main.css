@@ -3881,6 +3881,59 @@ input, select, textarea {
 					border-top-width: 0;
 				}
 
+		#main > .certifications {
+			padding: 4rem 4rem 3rem 4rem;
+			text-align: center;
+		}
+
+		.carousel {
+			position: relative;
+			width: 100%;
+			max-width: 800px;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+
+		.carousel-inner {
+			display: flex;
+			transition: transform 0.5s ease;
+		}
+
+		.carousel-inner img {
+			min-width: 100%;
+			height: auto;
+		}
+
+		.carousel-btn {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			background: rgba(0,0,0,0.5);
+			color: white;
+			border: none;
+			padding: 10px 15px;
+			cursor: pointer;
+			font-size: 18px;
+			z-index: 1;
+		}
+
+		.carousel-btn.prev {
+			left: 10px;
+		}
+
+		.carousel-btn.next {
+			right: 10px;
+		}
+
+		#intro .certifications {
+			margin-top: 2rem;
+			text-align: center;
+		}
+
+		#intro .carousel {
+			max-width: 600px;
+		}
+
 			@media screen and (max-width: 980px) {
 
 				#main > .posts > * {
@@ -3890,6 +3943,18 @@ input, select, textarea {
 				#main > .posts > * {
 					padding: 2.5rem;
 					width: 50%;
+				}
+
+				#main > .certifications {
+					padding: 3rem 3rem 2rem 3rem;
+				}
+
+				.carousel {
+					max-width: 700px;
+				}
+
+				.carousel-inner img {
+					/* adjust if needed */
 				}
 
 			}
@@ -3925,6 +3990,19 @@ input, select, textarea {
 					max-width: 25rem;
 					margin-left: auto;
 					margin-right: auto;
+				}
+
+				#main > .certifications {
+					padding: 2rem 2rem 1.5rem 2rem;
+				}
+
+				.carousel {
+					max-width: 600px;
+				}
+
+				.carousel-btn {
+					padding: 8px 12px;
+					font-size: 16px;
 				}
 
 			}
