@@ -12,6 +12,28 @@ export const projectData = [
     result: "The system efficiently identifies and ranks projects based on their Job descriptions."
   },
   {
+    id: 18,
+    categories: ["ai","py"],
+    title: "Customer Support Automation",
+    img: "/images/ai-6.png",
+    github: "https://github.com/SIDD58/Customer-Support-Automation",
+    technologies: "Langsmith , Langgraph , Redis, Celery ,Docker, FAST API, pydantic",
+    objective: " Architected a Lang Graph state machine with specialized agent nodes and self correction loop , and developed a non-blocking API using Async IO pipeline and Celery offloading LLM processing to background worker.",
+    result:"Rate Limit of 2 requests per minute, 40% reduction in Hallucination rate on dataset and reduced iterative retries, reduced response time using Async programming and fixed business rule violations. "
+
+  },
+  {
+    id: 19,
+    categories: ["ai","py"],
+    title: "Product-Recommender",
+    img: "/images/ai-7.png",
+    github: "https://github.com/SIDD58/Product-Recommender",
+    technologies: "AsynIO , Langgraph, openai , Redis ,Docker, NumPy, FAST API, pydantic",
+    objective: ": Built a semantic search tool that maps user intent to products using vector embedding and keyword matching.",
+    result: "async Redis caching layer storing vector embeddings , Fault tolerant 100% service uptime during external API outages/rate-limiting , Optimized ranking logic using NumPy and built a deterministic AI explanation module"
+
+  },
+  {
     id: 2,
     categories: ["data"],
     title: "Driver Revenue Optimization",
