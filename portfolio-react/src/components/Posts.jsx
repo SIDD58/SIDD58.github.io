@@ -4,7 +4,8 @@ export default function Posts({ selectedCategory })
 {
     const filtered = selectedCategory === 'All' 
     ? projectData 
-    : projectData.filter(p => p.category === selectedCategory);
+    : projectData.filter(p => p.categories.includes(selectedCategory));
+    // : projectData.filter(p => p.category === selectedCategory);
 
     return(
         <section className="posts">
@@ -21,3 +22,4 @@ export default function Posts({ selectedCategory })
 
     );
 }
+

@@ -2,11 +2,11 @@ export default function Nav({ activeCategory, setCategory })
 {
      const categories = [
         { id: 'all', label: 'Home page', value: 'All' },
-        { id: 'web', label: 'Web Development', value: 'Web-Dev' },
-        { id: 'ai', label: 'AI', value: 'AI' },
-        { id: 'data', label: 'Data Analysis', value: 'Data-Analysis' },
-        { id: 'py', label: 'Python', value: 'Python' },
-        { id: 'cyber', label: 'Cyber Security', value: 'Cyber-Security' }
+        { id: 'web', label: 'Web Development', value: 'web' },
+        { id: 'ai', label: 'AI', value: 'ai' },
+        { id: 'data', label: 'Data Analysis', value: 'data' },
+        { id: 'py', label: 'Python', value: 'py' },
+        { id: 'cyber', label: 'Cyber Security', value: 'sec' }
     ];
 
     return(

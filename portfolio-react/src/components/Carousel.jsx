@@ -1,7 +1,10 @@
 import { useState } from 'react';
 const images = [
     '/images/cert-ai102.png',
-    '/images/cert-ai900.png'
+    '/images/cert-ai900.png',
+    '/images/cert-az900.png',
+    '/images/cert-datacamp.png',
+
 ];
 
 export default function Carousel() {
@@ -20,7 +23,10 @@ export default function Carousel() {
   };
 
   return (
-    <div style={{ position: 'relative', width: '100%', maxWidth: '800px', margin: 'auto', overflow: 'hidden' }}>
+    <section className="certifications">
+    <h2>Certifications</h2>
+    <div className="carousel">
+      <div className="carousel-inner" style={{ position: 'relative', width: '100%', maxWidth: '800px', margin: 'auto', overflow: 'hidden' }}>
       {/* Image Display */}
       <img 
         src={images[currentIndex]} 
@@ -29,9 +35,12 @@ export default function Carousel() {
       />
 
       {/* Navigation Buttons */}
-      <button onClick={prevSlide} style={btnStyle}>Prev</button>
-      <button onClick={nextSlide} style={{ ...btnStyle, right: 0 }}>Next</button>
+      <button onClick={prevSlide} className='carousel-btn prev' style={btnStyle}>&lt;</button>
+      <button onClick={nextSlide} className='carousel-btn next' style={{ ...btnStyle, right: 0 }}>&gt;</button>
     </div>
+    </div>
+    </section>
+
   );
 }
 
