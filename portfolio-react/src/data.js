@@ -2,17 +2,18 @@
 
 export const projectData = [
   {
-    id: 1,
-    categories: ["ai","py"],
-    title: "AI Job Resume Matcher",
-    img: "/images/ai-5.png",
-    github: "https://github.com/SIDD58/ai-job-resume-matcher",
-    technologies: "FAST API, Pytest, SqlAlchemy, openai, langchain, Slack, pydantic",
-    objective: "Develop an AI-powered job resume matcher that compares job descriptions with candidate resumes to find the best matches.",
-    result: "The system efficiently identifies and ranks projects based on their Job descriptions."
+    id: 20,
+    categories: ["web"],
+    title: "Better-Call-Appointment-Scheduling",
+    img: "/images/sd-4.png",
+    github: "https://github.com/SIDD58/Better-Call-Appointment-Scheduling",
+    technologies: "React, PostgreSQL, Supabase, Supabase Edge Functions, Deno, Meta WhatsApp Cloud API, Vercel",
+    objective: "Built a full-stack appointment management platform using React, Supabase, and PostgreSQL with an event-driven architecture that automated appointment-triggered WhatsApp customer notifications.",
+    result: "Implemented Supabase Webhooks, Edge Functions (Deno), and Meta WhatsApp Cloud API to automatically process appointment events and send secure real-time confirmation messages without manual intervention."
   },
+
   {
-    id: 18,
+    id: 21,
     categories: ["ai","py"],
     title: "Customer Support Automation",
     img: "/images/ai-6.png",
@@ -32,6 +33,26 @@ export const projectData = [
     objective: ": Built a semantic search tool that maps user intent to products using vector embedding and keyword matching.",
     result: "async Redis caching layer storing vector embeddings , Fault tolerant 100% service uptime during external API outages/rate-limiting , Optimized ranking logic using NumPy and built a deterministic AI explanation module"
 
+  },
+  {
+    id: 18,
+    categories: ["ai","py"],
+    title: "Multi-Agent RAG Chatbot with Hybrid Retrieval (Vector + SQL) ",
+    img: "/images/ai-8.png",
+    github: "https://github.com/SIDD58/AgenticChatbot",
+    technologies: "LangGraph, LangSmith, ChromaDB, Docling, SQLite, Python",
+    objective: "Built a multi-agent RAG chatbot leveraging Docling, ChromaDB, and SQLite to answer queries across unstructured policy documents and structured customer ticket data.",
+    result: "Implemented hybrid retrieval and LLM-based query routing to dynamically select vector search or SQL execution, improving response accuracy across structured and unstructured knowledge sources."
+  },
+      {
+    id: 1,
+    categories: ["ai","py"],
+    title: "AI Job Resume Matcher",
+    img: "/images/ai-5.png",
+    github: "https://github.com/SIDD58/ai-job-resume-matcher",
+    technologies: "FAST API, Pytest, SqlAlchemy, openai, langchain, Slack, pydantic",
+    objective: "Develop an AI-powered job resume matcher that compares job descriptions with candidate resumes to find the best matches.",
+    result: "The system efficiently identifies and ranks projects based on their Job descriptions."
   },
   {
     id: 2,
